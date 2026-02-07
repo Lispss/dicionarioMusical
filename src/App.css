@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 
+.traducao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  text-align: left;
+} */
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 4.5rem;
+}
+
+.button button {
+  display: block;
+  align-self: flex-start;
+  justify-content: space-between;
+  background-color: #00a018;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* .musica {
+  flex: 1;
+  margin: 1rem;
+} */
+
+@media (max-width: 741px) {
+
+
+  .button {
+    justify-content: right;
+    margin-left: 105%;
+  }
+
+}
+
+@media (max-width: 535px) {
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .button {
+    justify-content: right;
+    margin-left: 105%;
+  }
+  
+}
